@@ -168,17 +168,17 @@
                     <p>Feel free to contact me either by phone, email or the form.</p>
                     <ul>
                         <li><img src="./assets/img/send.svg" alt=""><a
-                                href="mailto:contact@diegojaviel.com">contact@diegojaviel.com</a></li>
+                                href="mailto:contact@diegojaviel.com">diegojaviel@gmail.com</a></li>
                         <li><img src="./assets/img/phone.svg" alt=""><a href="+3530873820141">087 382 0141</a></li>
                     </ul>
 
                 </div>
-                <form action="" class="contact-form">
-                    <input type="text" placeholder="Name" class="contact-input">
-                    <input type="mail" placeholder="Email" class="contact-input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact-input"
+                <form action="https://formspree.io/f/xdojoneb" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Name" class="contact-input" required>
+                    <input type="mail" name="email" placeholder="Email" class="contact-input" required>
+                    <textarea name="message" name="message" cols="0" rows="10" class="contact-input"
                         placeholder="Your message"></textarea>
-                    <input type="button" value="Submit" class="contact-button button">
+                    <button type="submit" value="Submit" class="contact-button button">Send</button>
                 </form>
             </div>
         </section>
@@ -195,6 +195,7 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
