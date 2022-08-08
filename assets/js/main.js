@@ -56,7 +56,7 @@ const sr = ScrollReveal({
 
 sr.reveal(".home-data, .about-img, .tab-titles.active-tab", {});
 sr.reveal(
-  ".home-img, .about-subtitle, .about-text, .tab-content.active-tab, .tab-titles, .projects-img",
+  ".about-subtitle, .about-text, .tab-content.active-tab, .tab-titles, .project, .skills-img",
   {
     delay: 400,
   }

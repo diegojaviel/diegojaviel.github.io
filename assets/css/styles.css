@@ -7,6 +7,7 @@
   /*===== Colors =====*/
   --first-color: #1f5b92;
   --second-color: #222222;
+  --third-color: #f2f2f2;
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -103,6 +104,7 @@ img {
 .grid {
   max-width: 1024px;
   display: grid;
+  gap: 20px;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
@@ -260,7 +262,7 @@ img {
 }
 
 .about-img img {
-  width: 200px;
+  width: 280px;
   border-radius: 50%;
 }
 
@@ -324,20 +326,59 @@ img {
   position: relative;
 }
 
-.project-img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
+.project img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: var(--first-color);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   overflow: hidden;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: height 0.5s;
+  cursor: pointer;
 }
 
-.project-img img {
-  transition: 1s;
+.layer h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--third-color);
 }
 
-.project-img img:hover {
-  transform: scale(1.1);
-  opacity: 0.7;
+.layer p {
+  color: var(--third-color);
+}
+
+.layer-link {
+  display: flex;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.layer-link a {
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background-color: var(--third-color);
+}
+.layer-link a:hover {
+  transform: scale(1.2);
+}
+
+.project:hover .layer {
+  height: 100%;
 }
 
 /* ===== CONTACT =====*/
@@ -415,6 +456,10 @@ img {
 
   .contact-button {
     margin: auto;
+  }
+
+  .skills-img {
+    display: none;
   }
 }
 
